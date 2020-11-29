@@ -1,5 +1,7 @@
 {
   "name": "davidandgoliath",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

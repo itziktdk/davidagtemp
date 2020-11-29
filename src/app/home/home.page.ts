@@ -9,4 +9,9 @@ export class HomePage {
 
   constructor() {}
 
+
+  goFurther(){
+    console.log("click test")
+  }
+
 }
