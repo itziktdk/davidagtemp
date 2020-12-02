@@ -1,159 +1,100 @@
-<ion-header collapse="condense">
-  <ion-toolbar>
-    <ion-title size="large">
-      <img src="../../assets/logonewwhite.png" alt="">
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  
-
-      <ion-grid>
-         
-        
-                <ion-row>
-                  <ion-col style="text-align: center;" size="12">
-                    <h5>Registeration Form</h5>
-                  
-                  </ion-col>
-                </ion-row>
-
-                <ion-row>
-                  <ion-col></ion-col>
-                </ion-row>
-      
-
-                  <ion-row>
-                      <ion-col size="3"><img src="../../../assets/correct.png" alt=""></ion-col>
-                      <ion-col size="1.5"><hr></ion-col>
-
-                      <ion-col style="text-align: center;" size="3">
-
-                        <img src="../../../assets/correct.png" alt="">
-                    
-                      </ion-col>
-                      <ion-col size="1.5"><hr class="second"></ion-col>
-
-                      <ion-col style="text-align: center;" size="3"><img style="margin-top: 30px;" src="../../../assets/Ellipse.png" alt=""></ion-col>
-
-                    </ion-row>
-<ion-row>
-  <ion-col></ion-col>
-</ion-row>
-
-                    <!-- <ion-row>
-
-                        <ion-col size="6">
-
-<ion-input class="rounded" placeholder="license number">
-
-</ion-input>
-                        </ion-col>
-
-
-                        <ion-col size="6">
-                            <ion-input class="rounded" placeholder="license expiration">
-                              </ion-input>
-
-                        </ion-col>
-
-
-
-                      </ion-row>
-                      <ion-row>
-
-                          <ion-col size="6">
-  
-  
-                          </ion-col>
-  
-  
-                          <ion-col size="6">
-                              <ion-input class="rounded" placeholder="receipt">
-                                </ion-input>
-  
-                          </ion-col>
-  
-  
-  
-                        </ion-row> -->
-                        <ion-row>
-                          <ion-col></ion-col>
-                        </ion-row>
-
-                        <ion-row>
-                          <ion-col style="text-align: center;" size="12">
-<div class="rect">
-<ion-row>
-<ion-col style="text-align: center;" size="12">
-<p>לאיזה צורך הנך משתמש בתרופות מסוג אלו?
-</p>
-</ion-col>
-</ion-row>
-<ion-row>
-  <ion-col size="12">
-    <ion-list>
-      <ion-item lines="none" *ngFor="let entry of form">
-        <ion-label class="ion-text-right" >{{entry.val}}</ion-label>
-        <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
-      </ion-item>
-    </ion-list>
-  </ion-col>
-</ion-row>
-<ion-row>
-  <ion-col size="12" style="text-align: center;">
-  <img src="../../../assets/progress.png" alt=""></ion-col>
-
-</ion-row>
-
-<ion-row>
-  <ion-col routerLink="/register4" size="12" style="text-align: left;">
-  <img src="../../../assets/next.png" alt=""></ion-col>
-
-</ion-row>
-</div>
-                          </ion-col>
-                        </ion-row>
-
-
-                      
-<ion-row>
-  <ion-col></ion-col>
-</ion-row>
-
-<ion-row>
-  <ion-col size="12" style="text-align: right;color: #fff;">
-  <p>
-    לתשומת לבך
-  </p></ion-col>
-</ion-row>
-<ion-row>
-  <ion-col size="12" style="text-align: right;color: #fff;margin-top: -25px;">
-  <p>
-    המידע עשוי לשמש לצורכי מחקר ושיפור השירות
-  </p>
-  </ion-col>
-</ion-row>
-
-
-
-
-<!-- 
-<ion-row>
-    <ion-col size="2"></ion-col>
-  
-    <ion-col size="8">
-      <ion-item lines="none" >
-        <ion-input style="--background:#175182!important;height: 57px;--padding-start: 14%!important;" placeholder="Continue" class="rounded">
-            <img style="margin-left: 10%;" src="../../assets/fw1.png" alt="">
-          </ion-input>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center fixed-content" style="margin-top: 30px;">
+          <img src="../../assets/logonewwhite.png" width="110px">
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-right" size="12">
+        <ion-item lines=none class="ttl">
+          <ion-icon name="documents-outline"></ion-icon>
+          <ion-label>צירוף מסמכים</ion-label>
         </ion-item>
-    </ion-col>
-  
-    <ion-col size="2"></ion-col>
-  
-  </ion-row> -->
-                    </ion-grid>
+        <!-- <ion-item lines=none>
+          <ion-label>
+            ברוך הבא לאפליקצית השירות המתקדמת שלנו!
+          </ion-label>
+        </ion-item> -->
+        <ion-item lines=none>
+          <ion-label class="bigger ion-text-wrap">
+            המסמכים שתצרף בשלב זה ישמשו לבדיקת זכאותך בעת בקשה לשמירת מלאי או הזמנה ישירה של מוצר. <br>
+            לצורך השלמת הרישום, יש להצטייד בטופס מרשם ורשיון בתוקף.
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <!-- Start Progress Icons -->
+    <ion-row>
+      <ion-col size=12>
+        <div class="ion-text-center fixed-content" style="margin-top: 10px;">
+          <img src="../../../assets/step3-survey.svg" width="80%" />
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- END Progress Icons -->
+
+  <ion-card style="background-color: #0d171f; color:#333333">
+    <ion-card-header>
+      <ion-card-title>
+        שאלה 1 מתוך 5
+     </ion-card-title>
+      <ion-card-subtitle>
+        מהו טווח השנים שבו הנך צורך מוצרי קנאביס רפואי?
+</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+<ion-item lines="none">
+  <ion-chip color="secondary">לחץ לבחירה</ion-chip>
+  <ion-select showCancelButton="none" selectedText=" " value="q1" interface="action-sheet" >
+    <ion-select-option value="1">מעל 10 שנים</ion-select-option>
+    <ion-select-option value="2">בין 5-10 שנים</ion-select-option>
+    <ion-select-option value="3">בין 3-5 שנים</ion-select-option>
+    <ion-select-option value="4">פחות משנה</ion-select-option>
+  </ion-select>
+</ion-item>
+    </ion-card-content>
+  </ion-card>
+
+
+    <!-- START Next Step Button -->
+    <ion-row class="ion-justify-content-center">
+      <ion-col center size="8" routerLink="/register3">
+        <ion-item button detail="false" lines="none" detail-icon="chevron-back-outline"
+          class="ion-text-center input-darkb-rnd">
+          <ion-label>המשך</ion-label>
+          <ion-icon name="arrow-back-circle-outline"></ion-icon>
+
+
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <!-- END -->
+  </ion-grid>
 
 </ion-content>
+<style>
+  ion-toolbar {
+    visibility: visible;
+  }
+
+  .input-darkb-rnd {
+    --background: #071a33;
+    --border-radius: 25px;
+    color: #ffffff;
+    border-color: #333333;
+    border-width: thin;
+  }
+</style>
+
+<script>
+  $(document).ready(function () {
+    console.log("ready!");
+    $('#fileSelect').on('click', function () {
+      console.log("click!");
+    });
+  });
+</script>
