@@ -2,7 +2,6 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { Register2Page } from './register2.page';
-
 describe('Register2Page', () => {
   let component: Register2Page;
   let fixture: ComponentFixture<Register2Page>;

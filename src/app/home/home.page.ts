@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ValueAccessor } from '@ionic/angular/directives/control-value-accessors/value-accessor';
+
 
 @Component({
   selector: 'app-home',
