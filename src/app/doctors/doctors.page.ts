@@ -1,5 +1,6 @@
 import { DocmodalPage } from './../modals/docmodal/docmodal.page';
-import { Component, OnInit } from '@angular/core';
+// import { Component,  } from '@angular/core';
+import {OnInit, Component, Pipe, NgModule, VERSION} from '@angular/core';
 import { ModalController, NavController } from '@ionic/angular';
 
 @Component({
