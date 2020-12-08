@@ -9,6 +9,7 @@ import { ModalController } from '@ionic/angular';
 export class DocmodalPage implements OnInit {
   name;
   phone;
+  phone2;
   constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
