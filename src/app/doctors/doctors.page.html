@@ -32,7 +32,7 @@
     </ion-list> -->
 
     <div class="s1">
-      <div class="the-list ion-padding-vertical" ng-repeat="friend in friends | filter:searchText">
+      <div class="the-list ion-padding-vertical">
         <div class="card" (click)="showModal()" *ngFor="let data of userRecords | filter:filterTerm">
           <ion-row>
             <ion-col size="7" class="right">
