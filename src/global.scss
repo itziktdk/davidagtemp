@@ -24,3 +24,178 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+
+.modal-wrapper
+{
+    background: transparent !important;
+}
+
+
+.flex 
+{
+    display: flex;
+}
+
+.flexd
+{
+    flex-direction: column;
+}
+
+.al-center
+{
+    align-items: center;
+}
+
+.al-end
+{
+    align-items: flex-end;
+}
+.jc-start
+{
+    justify-content: flex-start;
+}
+
+.jc-center
+{
+    justify-content: center;
+}
+.jc-end
+{
+    justify-content: flex-end;
+}
+
+.jc-between
+{
+    justify-content: space-between;
+}
+
+
+ion-button
+{
+    text-transform: none !important;
+}
+
+.ripple-parent 
+{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.search-holder
+{
+    // background-color: rgba(0,2,66,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+  ion-searchbar
+    {
+        padding: 0 !important;
+        .searchbar-input-container {
+            input {
+              background: white !important;
+              border-radius: 1rem !important;
+            }
+          }
+    }
+
+
+    .segments-holder 
+    {
+    padding: 0 10px !important;
+    ion-segment
+    {
+        --background:  #ffffff80;
+        border-radius: 15px !important;
+        ion-segment-button
+        { 
+            --background-checked: white;
+            --border-radius: 15px;
+            font-size: 1rem !important;
+            min-height: 3rem !important;
+            ion-label {
+                margin: 0 !important;
+            }
+            --indicator-height:0  !important;
+        }
+    }
+    }
+
+
+.card
+{
+    background: white;
+    border-radius: 15px;
+    padding: 10px 5px;
+    margin: 10px 0;
+    .left
+    {
+        img
+        {
+            height: 2rem;
+        }
+    }
+
+    .right
+    {
+
+        img
+        {
+            height: 2rem;
+        }
+        h4
+        {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p
+        {
+            font-size: 12px;
+        }
+
+        .btns-holder
+        {
+
+            #subject
+            {
+                --background: #F36;
+
+            }
+
+            #hmo
+            {
+                --background: #2AC940;
+
+
+            }
+            ion-button
+            {
+                --color: white;
+                --border-radius: 15px;
+                --box-shadow: none;
+                height: 20px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+
+ion-fab-button
+{
+    --background: transparent;
+    --border-color: white;
+    --border-radius: 50%;
+    --border-width: 1px;
+    --border-style: solid;
+}
+

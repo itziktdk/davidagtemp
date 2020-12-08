@@ -1,27 +1,90 @@
-#container {
-  text-align: center;
+ion-content
+{
+  .holder
+  {
+    background: url(../../assets/imgs/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+    .logo-holder
+    {
+      padding-top: 2vh;
+      img
+      {
+        height: 10vh;
+      }
+    }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+    .user-bar
+    {
+      background: #ffffff80;
+      margin-top: 1rem;
+      width: 100%;
+      padding: 10px;
+      ion-avatar
+      {
+        --border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-left: 10px;
+      }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+      ion-badge
+      {
+        background-color: rgba(255,255,255,0.5);
+        font-size: 14px;
+      }
+    }
 
-  color: #8c8c8c;
+    .cat-holder
+    {
+      .btn
+      {
+        background: white;
+        border-radius: 15px;
+        padding: 10px 0;
+        .img-holder
+        {
+          img
+          {
+            height: 3rem;
+          }
+        }
 
-  margin: 0;
-}
+        p
+        {
+          margin: 5px 0;
+          font-size: 0.9rem;
+        }
+      }
+    }
 
-#container a {
-  text-decoration: none;
+    .btn-holder
+    {
+      margin-top: 10px;
+      ion-item
+      {
+        --background: #FF8A00;
+        --border-radius: 30px;
+
+        ion-label
+        {
+          color: white;
+          font-size: 18px;
+        }
+        .end-slot
+        {
+          margin: 0;
+          img
+          {
+            height: 3rem;
+          }
+        }
+
+      }
+    }
+  }
 }
