@@ -12,7 +12,9 @@
 
     <div class="search-holder ion-padding">
       <ion-searchbar class="ion-text-center" placeholder="חיפוש לפי שם, התמחות או ישוב" inputmode="decimal"
-        type="decimal" [debounce]="250" showCancelButton="never" [(ngModel)]="filterTerm"></ion-searchbar>
+        type="decimal" [debounce]="250" showCancelButton="never"
+        [(ngModel)]="filterTerm"
+        ></ion-searchbar>
     </div>
     <div class="s1">
       <div class="the-list">
@@ -21,45 +23,45 @@
             {{result.length}}
             &nbsp; רופאים
           </ion-chip>
-          <ng-container *ngFor="let data of result">
-            <div class="card" (click)="showModal()">
-              <ion-row>
-                <ion-col size="7" class="right">
-                  <div class="first flex al-center jc-start">
-                    <img src="assets/imgs/doca.png" alt="">
-                    <h4>&nbsp;{{data.name}}</h4>
+        <ng-container *ngFor="let data of result">
+        <div class="card" (click)="showModal(data.name, data.telephone)" >
+          <ion-row>
+            <ion-col size="7" class="right">
+              <div class="first flex al-center jc-start">
+                <img src="assets/imgs/doca.png" alt="">
+                <h4>&nbsp;{{data.name}}</h4>
+               
+              </div>
+              <div class="sec">
+                <p class="ion-text-wrap">{{data.Address}}, {{data.City}}</p>
+              </div>
+              <div class="btns-holder flex al-center jc-between">
+                <ion-button id="hmo">
+                  {{data.Assosiation}}
+                </ion-button>
+                <ion-button id="subject">
+                  {{data.subject}}
+                </ion-button>
 
-                  </div>
-                  <div class="sec">
-                    <p class="ion-text-wrap">{{data.Address}}, {{data.City}}</p>
-                  </div>
-                  <div class="btns-holder flex al-center jc-between">
-                    <ion-button id="hmo">
-                      {{data.Assosiation}}
-                    </ion-button>
-                    <ion-button id="subject">
-                      {{data.subject}}
-                    </ion-button>
-
-
-                  </div>
-                </ion-col>
-                <ion-col size="5" class="left flex al-start jc-between">
-                  <img src="assets/imgs/waze.png" alt="">
-
-                  <img src="assets/imgs/call.png" alt="">
-                  <img src="assets/imgs/whatsapp.png" alt="">
-
-                </ion-col>
-
-              </ion-row>
-            </div>
-            <!-- <ng-container *ngIf="(result.length) < 1" [ngTemplateOutlet]="noItems">
+               
+              </div>
+            </ion-col>
+            <ion-col size="5" class="left flex al-start jc-between">
+              <img src="assets/imgs/waze.png" alt="">
+           
+              <img src="assets/imgs/call.png" alt="">
+              <img src="assets/imgs/whatsapp.png" alt="">
+             
+            </ion-col>
+           
+          </ion-row>
+        </div>
+        <!-- <ng-container *ngIf="(result.length) < 1" [ngTemplateOutlet]="noItems">
           ffffff
         </ng-container> -->
-          </ng-container>
-        </ng-container>
-        <!-- 
+      </ng-container>
+      </ng-container>
+<!-- 
         <div class="card" (click)="showModal()">
           <ion-row>
             <ion-col size="7" class="right">

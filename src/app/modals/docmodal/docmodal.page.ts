@@ -7,8 +7,8 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./docmodal.page.scss'],
 })
 export class DocmodalPage implements OnInit {
-  foo;
-  bar;
+  name;
+  phone;
   constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
