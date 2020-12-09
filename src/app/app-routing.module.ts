@@ -39,6 +39,30 @@ const routes: Routes = [
     path: 'productmodal',
     loadChildren: () => import('./modals/productmodal/productmodal.module').then( m => m.ProductmodalPageModule)
   },
+  {
+    path: 'homelogin',
+    loadChildren: () => import('./homelogin/homelogin.module').then( m => m.homeloginPageModule)
+  },
+  {
+    path: 'resiter1',
+    loadChildren: () => import('./auth/register1/register1.module').then( m => m.Register1PageModule)
+  },
+  {
+    path: 'resiter2',
+    loadChildren: () => import('./auth/register2/register2.module').then( m => m.Register2PageModule)
+  },
+  {
+    path: 'resiter3',
+    loadChildren: () => import('./auth/register3/register3.module').then( m => m.Register3PageModule)
+  },
+  {
+    path: 'resiter4',
+    loadChildren: () => import('./auth/register4/register4.module').then( m => m.Register4PageModule)
+  },
+  {
+    path: 'resiter5',
+    loadChildren: () => import('./auth/register5/register5.module').then( m => m.Register5PageModule)
+  },
 ];
 
 @NgModule({

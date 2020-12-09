@@ -30,4 +30,8 @@ export class HomePage {
   {
     this.navCtrl.navigateForward('license');
   }
+  goLogin()
+  {
+    this.navCtrl.navigateForward('homelogin');
+  }
 }

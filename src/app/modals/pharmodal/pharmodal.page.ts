@@ -7,7 +7,10 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./pharmodal.page.scss'],
 })
 export class PharmodalPage implements OnInit {
-
+  name;
+  phone;
+  city;
+  img;
   constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
