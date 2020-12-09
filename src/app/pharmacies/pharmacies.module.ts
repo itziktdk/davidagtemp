@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PharmaciesPageRoutingModule } from './pharmacies-routing.module';
 
 import { PharmaciesPage } from './pharmacies.page';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PharmaciesPageRoutingModule
+    PharmaciesPageRoutingModule,
+    Ng2SearchPipeModule
   ],
   declarations: [PharmaciesPage]
 })
