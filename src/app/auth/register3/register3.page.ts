@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 
-export class Register3Page implements OnInit {
+export class register3Page implements OnInit {
   public form = [
     { val: 'תשובה א', isChecked: false },
     { val: 'תשובה ב', isChecked: false },

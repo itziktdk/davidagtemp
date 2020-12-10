@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './register2.page.html',
   styleUrls: ['./register2.page.scss'],
 })
-export class Register2Page implements OnInit {
+export class register2Page implements OnInit {
 
   constructor() { }
 

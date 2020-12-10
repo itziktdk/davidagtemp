@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { ValueAccessor } from '@ionic/angular/directives/control-value-accessors/value-accessor';
+// import { ValueAccessor } from '@ionic/angular/directives/control-value-accessors/value-accessor';
 import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homelogin',
@@ -9,13 +10,22 @@ import { NavController } from '@ionic/angular';
 })
 export class homeloginPage {
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController, private router: Router) {}
 
   goFurther(){
     console.log("click test")
-  }
-register1()
+  };
+  goLicense()
+  {
+    this.navCtrl.navigateForward('license');
+  };
+
+register2()
 {
-  this.navCtrl.navigateForward('register1');
+  this.navCtrl.navigateForward('/auth/register2');
+};
+
+navigate(){
+  this.router.navigate(['register1'])
 }
 }
