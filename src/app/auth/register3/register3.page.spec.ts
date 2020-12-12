@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { register3Page } from './register3.page';
+import { Register3Page } from './register3.page';
 
 describe('register3Page', () => {
-  let component: register3Page;
-  let fixture: ComponentFixture<register3Page>;
+  let component: Register3Page;
+  let fixture: ComponentFixture<Register3Page>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ register3Page ],
+      declarations: [ Register3Page ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(register3Page);
+    fixture = TestBed.createComponent(Register3Page);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

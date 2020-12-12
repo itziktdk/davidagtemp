@@ -41,27 +41,27 @@ const routes: Routes = [
   },
   {
     path: 'homelogin',
-    loadChildren: () => import('./homelogin/homelogin.module').then( m => m.homeloginPageModule)
+    loadChildren: () => import('./homelogin/homelogin.module').then( m => m.HomeloginPageModule)
   },
   {
     path: 'register1',
-    loadChildren: () => import('./auth/register1/register1.module').then( m => m.register1PageModule)
+    loadChildren: () => import('./auth/register1/register1.module').then( m => m.Register1PageModule)
   },
   {
     path: 'regsiter2',
-    loadChildren: () => import('./auth/register2/register2.module').then( m => m.register2PageModule)
+    loadChildren: () => import('./auth/register2/register2.module').then( m => m.Register2PageModule)
   },
   {
     path: 'regsiter3',
-    loadChildren: () => import('./auth/register3/register3.module').then( m => m.register3PageModule)
+    loadChildren: () => import('./auth/register3/register3.module').then( m => m.Register3PageModule)
   },
   {
     path: 'regsiter4',
-    loadChildren: () => import('./auth/register4/register4.module').then( m => m.register4PageModule)
+    loadChildren: () => import('./auth/register4/register4.module').then( m => m.Register4PageModule)
   },
   {
     path: 'regsiter5',
-    loadChildren: () => import('./auth/register5/register5.module').then( m => m.register5PageModule)
+    loadChildren: () => import('./auth/register5/register5.module').then( m => m.Register5PageModule)
   },
 ];
 

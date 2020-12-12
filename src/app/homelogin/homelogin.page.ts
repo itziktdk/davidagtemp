@@ -8,24 +8,24 @@ import { Router } from '@angular/router';
   templateUrl: './homelogin.page.html',
   styleUrls: ['./homelogin.page.scss'],
 })
-export class homeloginPage {
+export class HomeloginPage {
 
   constructor(private navCtrl: NavController, private router: Router) {}
 
   goFurther(){
-    console.log("click test")
-  };
+    console.log('click test');
+  }
   goLicense()
   {
     this.navCtrl.navigateForward('license');
-  };
+  }
 
 register2()
 {
   this.navCtrl.navigateForward('/auth/register2');
-};
+}
 
 navigate(){
-  this.router.navigate(['register1'])
+  this.router.navigate(['register1']);
 }
 }
