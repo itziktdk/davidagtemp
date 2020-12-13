@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyC4jq5keI4dLuv3rlk8vV67JpVJ7TH58z8',
+    authDomain: 'davidagtemp.firebaseapp.com',
+    databaseURL: 'https://davidagtemp-test.europe-west1.firebasedatabase.app/',
+    projectId: 'davidagtemp',
+    storageBucket: 'davidagtemp.appspot.com',
+    messagingSenderId: '843728717134',
+    appId: '1:843728717134:web:8e2df6ab22e71ffab14a1f',
+    measurementId: 'G-HVRVCFRW5C'
+  }
 };
 
 /*

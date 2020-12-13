@@ -1335,7 +1335,7 @@ export class PharmaciesPage implements OnInit {
     console.log(this.category);
   }
 
-  async showModal(name: string, phone: any, city: any, address: any, img:any) {
+  async showModal(name: string, phone: any, city: any, address: any, img: any) {
     const modal = await this.modalCtrl.create({
       component: PharmodalPage,
       backdropDismiss: true,

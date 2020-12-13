@@ -34,4 +34,8 @@ export class HomePage {
   {
     this.navCtrl.navigateForward('homelogin');
   }
+  goDocs()
+  {
+    this.navCtrl.navigateForward('regform3');
+  }
 }

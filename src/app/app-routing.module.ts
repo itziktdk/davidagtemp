@@ -38,31 +38,51 @@ const routes: Routes = [
   {
     path: 'productmodal',
     loadChildren: () => import('./modals/productmodal/productmodal.module').then( m => m.ProductmodalPageModule)
+  },  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
   {
-    path: 'homelogin',
-    loadChildren: () => import('./homelogin/homelogin.module').then( m => m.HomeloginPageModule)
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   },
   {
-    path: 'register1',
-    loadChildren: () => import('./auth/register1/register1.module').then( m => m.Register1PageModule)
+    path: 'regform1',
+    loadChildren: () => import('./signup/regform1/regform1.module').then( m => m.Regform1PageModule)
   },
   {
-    path: 'regsiter2',
-    loadChildren: () => import('./auth/register2/register2.module').then( m => m.Register2PageModule)
+    path: 'regform2',
+    loadChildren: () => import('./signup/regform2/regform2.module').then( m => m.Regform2PageModule)
   },
   {
-    path: 'regsiter3',
-    loadChildren: () => import('./auth/register3/register3.module').then( m => m.Register3PageModule)
+    path: 'regform3',
+    loadChildren: () => import('./signup/regform3/regform3.module').then( m => m.Regform3PageModule)
   },
   {
-    path: 'regsiter4',
-    loadChildren: () => import('./auth/register4/register4.module').then( m => m.Register4PageModule)
+    path: 'survey1',
+    loadChildren: () => import('./signup/survey1/survey1.module').then( m => m.Survey1PageModule)
   },
   {
-    path: 'regsiter5',
-    loadChildren: () => import('./auth/register5/register5.module').then( m => m.Register5PageModule)
+    path: 'survey2',
+    loadChildren: () => import('./signup/survey2/survey2.module').then( m => m.Survey2PageModule)
   },
+  {
+    path: 'survey3',
+    loadChildren: () => import('./signup/survey3/survey3.module').then( m => m.Survey3PageModule)
+  },
+  {
+    path: 'regfinish',
+    loadChildren: () => import('./signup/regfinish/regfinish.module').then( m => m.RegfinishPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./signup/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('./signup/password/password.module').then( m => m.PasswordPageModule)
+  }
+
 ];
 
 @NgModule({
