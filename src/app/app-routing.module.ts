@@ -38,7 +38,8 @@ const routes: Routes = [
   {
     path: 'productmodal',
     loadChildren: () => import('./modals/productmodal/productmodal.module').then( m => m.ProductmodalPageModule)
-  },  {
+  },
+  {
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
