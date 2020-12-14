@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FirebaseService } from '../services/firebase.service';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
-interface StudentData {
+interface CustomerData {
   Name: string;
   Age: number;
   Address: string;
@@ -15,28 +15,28 @@ interface StudentData {
 })
 export class ProfilePage {
 
-  studentList = [];
-  studentData: StudentData;
-  studentForm: FormGroup;
+  customerList = [];
+  customerData: CustomerData;
+  customerForm: FormGroup;
 
   constructor(
     private firebaseService: FirebaseService,
     public fb: FormBuilder
   ) {
-    this.studentData = {} as StudentData;
+    this.customerData = {} as CustomerData;
   }
 
   ngOnInit() {
 
-    this.studentForm = this.fb.group({
+    this.customerForm = this.fb.group({
       Name: ['', [Validators.required]],
       Age: ['', [Validators.required]],
       Address: ['', [Validators.required]]
     })
 
-    this.firebaseService.read_students().subscribe(data => {
+    this.firebaseService.read_customers().subscribe(data => {
 
-      this.studentList = data.map(e => {
+      this.customerList = data.map(e => {
         return {
           id: e.payload.doc.id,
           isEdit: false,
@@ -45,15 +45,15 @@ export class ProfilePage {
           Address: e.payload.doc.data()['Address'],
         };
       })
-      console.log(this.studentList);
+      console.log(this.customerList);
 
     });
   }
 
   CreateRecord() {
-    console.log(this.studentForm.value);
-    this.firebaseService.create_student(this.studentForm.value).then(resp => {
-      this.studentForm.reset();
+    console.log(this.customerForm.value);
+    this.firebaseService.create_customer(this.customerForm.value).then(resp => {
+      this.customerForm.reset();
     })
       .catch(error => {
         console.log(error);
@@ -61,7 +61,7 @@ export class ProfilePage {
   }
 
   RemoveRecord(rowID) {
-    this.firebaseService.delete_student(rowID);
+    this.firebaseService.delete_customer(rowID);
   }
 
   EditRecord(record) {
@@ -76,7 +76,7 @@ export class ProfilePage {
     record['Name'] = recordRow.EditName;
     record['Age'] = recordRow.EditAge;
     record['Address'] = recordRow.EditAddress;
-    this.firebaseService.update_student(recordRow.id, record);
+    this.firebaseService.update_customer(recordRow.id, record);
     recordRow.isEdit = false;
   }
 

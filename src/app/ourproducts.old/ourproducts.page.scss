@@ -34,40 +34,17 @@ ion-content
       }
     }
 
-    .title-holder
-    {
-        h2
-        {
-            color: white;
-            margin: 0;
-        }
-    }
-
-    .card
-    {
-      padding: 0 !important;
-      margin: 0 !important;
-      border-radius: 0 !important;
-      border-bottom: 1px solid #808080 !important;
-      #prem
-      {
-        --background: #FA9917;
-
-      }
-    }
 
     .left
     {
-      background: #005AB5;
         img
         {
-            height: 16vw;
+            height: 20vh;
         }
     }
 
     .right
     {
-      padding: 10px 0;
         .first
         {
             p

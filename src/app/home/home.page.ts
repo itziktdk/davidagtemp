@@ -23,7 +23,7 @@ export class HomePage {
 
   goProducts()
   {
-    this.navCtrl.navigateForward('ourproducts');
+    this.navCtrl.navigateForward('productcategories');
   }
 
   goLicense()
@@ -32,7 +32,7 @@ export class HomePage {
   }
   goLogin()
   {
-    this.navCtrl.navigateForward('homelogin');
+    this.navCtrl.navigateForward('login');
   }
   goDocs()
   {

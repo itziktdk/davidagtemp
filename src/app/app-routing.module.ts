@@ -56,10 +56,6 @@ const routes: Routes = [
     loadChildren: () => import('./signup/regform2/regform2.module').then( m => m.Regform2PageModule)
   },
   {
-    path: 'regform3',
-    loadChildren: () => import('./signup/regform3/regform3.module').then( m => m.Regform3PageModule)
-  },
-  {
     path: 'survey1',
     loadChildren: () => import('./signup/survey1/survey1.module').then( m => m.Survey1PageModule)
   },
@@ -82,7 +78,15 @@ const routes: Routes = [
   {
     path: 'password',
     loadChildren: () => import('./signup/password/password.module').then( m => m.PasswordPageModule)
+  },  {
+    path: 'productcategories',
+    loadChildren: () => import('./productcategories/productcategories.module').then( m => m.ProductcategoriesPageModule)
+  },
+  {
+    path: 'ourproducts',
+    loadChildren: () => import('./ourproducts/ourproducts.module').then( m => m.OurproductsPageModule)
   }
+
 
 ];
 

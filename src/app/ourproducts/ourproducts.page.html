@@ -1,6 +1,6 @@
 <ion-content>
-  <div class="holder ion-padding">
-    <div class="top-logo">
+  <div class="holder ion-padding-vertical">
+    <div class="top-logo ion-padding-horizontal">
       <div class="img-holder ion-text-center">
         <img src="assets/imgs/products.png" alt="">
         <h5>המוצרים שלנו</h5>
@@ -9,48 +9,119 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="search-holder ion-padding">
+    <!-- 
+    <div class="search-holder ion-padding">
       <ion-searchbar class="ion-text-center" placeholder="חיפוש חופשי" inputmode="decimal" type="decimal"
         [debounce]="250" showCancelButton="never"></ion-searchbar>
-    </div> -->
+    </div>
+ -->
+    <div class="title-holder ion-text-center ion-padding-vertical">
+      <h2>T15/C3      </h2>
+    </div>
 
+    <div>
+      <div class="the-list ion-padding-vertical">
+        <div class="card" (click)="showModal()">
+          <ion-row>
+            <ion-col size="3" class="left flex al-center jc-between">
+              <img src="assets/imgs/cc1.png" alt="">
+            </ion-col>
+            <ion-col size="8" class="right flex flexd">
+              <div class="first ion-text-center">
+                <h4>Product Name</h4>
+                <p class="ion-text-wrap">2 rows description</p>
+              </div>
+              <div class="btns-holder flex  jc-end">
 
-  
-        
-<ion-grid fixed>
-  <ion-row class="ion-no-border">
-    <ion-col size="12">
-      <ion-chip style="color:aliceblue; border-color: silver; border-style: dotted;">סדרת PREMIUM</ion-chip>
-      <!-- <ion-progress-bar type="indeterminate" color="warning"></ion-progress-bar> -->
-      
-      <ion-button class="ion-no-border" color="light" expand="block" (click)="presentModal('rrr');">
-        T20/C4</ion-button>
-      <ion-button class="ion-no-border" color="light" expand="block" (click)="presentModal()">T15/C3</ion-button>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col size="12">
-      <ion-chip style="color:gold; border-color: gold; border-style: dotted;">סדרת SUPER PREMIUM</ion-chip>
-      <ion-button class="ion-no-border" color="warning" expand="block" (click)="presentModal('aaa')">T20/C4</ion-button>
-      <ion-button class="ion-no-border" color="warning" expand="block" (click)="presentModal()">T15/C3</ion-button>
-    </ion-col>
-  </ion-row>
+                <ion-button id="prem">
+                  PREMIUM
+                </ion-button>
+              </div>
+            </ion-col>
 
-  <ion-row>
-    <ion-col size="12">
-      <ion-chip style="color:rgb(212, 197, 187); border-color: rgb(223, 89, 0); border-style: dotted;">Premium Oils</ion-chip>
-      <ion-button class="ion-no-border" color="light" expand="block" (click)="presentModal()">סדרת השמנים</ion-button>
-    </ion-col>
-  </ion-row>
+            <ion-col size="1" class="flex al-center">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-col>
 
-</ion-grid>
+          </ion-row>
+        </div>
 
-    <script>
+        <div class="card" (click)="showModal()">
+          <ion-row>
+            <ion-col size="3" class="left flex al-center jc-between">
+              <img src="assets/imgs/cc1.png" alt="">
+            </ion-col>
+            <ion-col size="8" class="right flex flexd">
+              <div class="first ion-text-center">
+                <h4>Product Name</h4>
+                <p class="ion-text-wrap">2 rows description</p>
+              </div>
+              <div class="btns-holder flex  jc-end">
 
-    </script>
+                <ion-button id="prem">
+                  PREMIUM
+                </ion-button>
+              </div>
+            </ion-col>
+            <ion-col size="1" class="flex al-center">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-col>
+
+          </ion-row>
+        </div>
+        <div class="card" (click)="showModal()">
+          <ion-row>
+            <ion-col size="3" class="left flex al-center jc-between">
+              <img src="assets/imgs/cc1.png" alt="">
+            </ion-col>
+            <ion-col size="8" class="right flex flexd">
+              <div class="first ion-text-center">
+                <h4>Product Name</h4>
+                <p class="ion-text-wrap">2 rows description</p>
+              </div>
+              <div class="btns-holder flex  jc-end">
+
+                <ion-button id="prem">
+                  PREMIUM
+                </ion-button>
+              </div>
+            </ion-col>
+
+            <ion-col size="1" class="flex al-center">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-col>
+
+          </ion-row>
+        </div>
+
+        <div class="card" (click)="showModal()">
+          <ion-row>
+            <ion-col size="3" class="left flex al-center jc-between">
+              <img src="assets/imgs/cc1.png" alt="">
+            </ion-col>
+            <ion-col size="8" class="right flex flexd">
+              <div class="first ion-text-center">
+                <h4>Product Name</h4>
+                <p class="ion-text-wrap">2 rows description</p>
+              </div>
+              <div class="btns-holder flex  jc-end">
+
+                <ion-button id="prem">
+                  PREMIUM
+                </ion-button>
+              </div>
+            </ion-col>
+            <ion-col size="1" class="flex al-center">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-col>
+
+          </ion-row>
+        </div>
+
+      </div>
+    </div>
   </div>
-  </ion-content>     
+</ion-content>
 
 <ion-fab vertical="bottom" horizontal="center" slot="fixed">
   <ion-fab-button (click)="goHome()">

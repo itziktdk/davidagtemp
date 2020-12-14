@@ -27,7 +27,9 @@
 
 
 
-
+.white {
+    color: #ffffff;
+}
 
 .modal-wrapper
 {
@@ -72,6 +74,13 @@
 {
     justify-content: space-between;
 }
+
+ion-content {
+    --background: url('./assets/imgs/bg.png') no-repeat 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
 
 ion-button

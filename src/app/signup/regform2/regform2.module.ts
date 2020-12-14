@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { Regform2PageRoutingModule } from './regform2-routing.module';
 
 import { Regform2Page } from './regform2.page';
+import { FormatFileSizePipe } from './format-file-size.pipe';
 
 @NgModule({
   imports: [
